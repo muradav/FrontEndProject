@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.covidHead{
+    background-color: #233a95;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.covidHead h6{
+    font-size: smaller;
+    color: white;
+}
