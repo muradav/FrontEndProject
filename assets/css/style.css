@@ -19,3 +19,43 @@
     font-size: smaller;
     color: white;
 }
+
+.secondContainer{
+    padding-left: 95px;
+    height: 45px;
+}
+
+.secondHead ul{
+    display: flex;
+    padding-top: 6px;
+    padding-left: 15px;
+}
+
+.secondHead ul li{
+    list-style: none;
+    padding-top: 5px;
+}
+
+.secondHead ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(90, 88, 88);
+}
+
+.secondHead .secondCol{
+    padding-left: 60px;
+    font-size: 14px;
+    padding-top: 7px;
+    color: rgb(90, 88, 88);
+}
+
+.secondHead .secondCol i{
+    
+    font-size: 22px;
+    
+}
+
+.secondHead .secondCol span{
+    padding-top: 7px;
+    padding-left: 10px;
+}
