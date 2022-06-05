@@ -47,15 +47,101 @@
     font-size: 14px;
     padding-top: 7px;
     color: rgb(90, 88, 88);
+    position: relative;
+    
 }
 
+.secondHead .secondCol:after {
+    content: '';
+    height: 40%; 
+    width: 1px;
+  
+    position: absolute;
+    right: 0;
+    top: 13px; 
+  
+    background-color: rgb(212, 209, 209); 
+    opacity: 0.5;
+  }
+
 .secondHead .secondCol i{
-    
     font-size: 22px;
-    
 }
 
 .secondHead .secondCol span{
     padding-top: 7px;
     padding-left: 10px;
+}
+
+.secondHead .thirdCol{
+    margin-left: 0px;
+    padding-left: 0px;
+    position: relative;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.secondHead .thirdCol .text-content{
+    padding-left: 0px;
+    font-size: 14px;
+    padding-top: 14px;
+    color: rgb(90, 88, 88);
+    margin-left: 0px;
+}
+
+.secondHead .thirdCol .text-content:after{
+    content: '';
+    height: 90%; 
+    width: 1px;
+  
+    position: absolute;
+    right: 0;
+    top: 0px; 
+  
+    background-color: rgb(212, 209, 209); 
+       
+}
+
+.secondHead .thirdCol span{
+    padding-top: 7px;
+}
+
+.secondHead .thirdCol span a{
+    text-decoration: none;
+    
+}
+
+.secondHead .thirdCol  .downBtn{
+    border:none;
+    background: none;
+    color: rgb(90, 88, 88);
+    padding: 16px;
+    font-size: 12px;
+    padding-right: 0px;
+}
+
+.secondHead .thirdCol .dropdown{
+    position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+.secondHead .thirdCol .dropdown a{
+    text-decoration: none;
+    color: rgb(90, 88, 88);
+} */
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.secondHead .thirdCol .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.secondHead .thirdCol .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
