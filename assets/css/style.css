@@ -163,7 +163,9 @@
 
 .navbar .logoBac{
     padding-left:95px;
-    padding-top: 30px;
+    padding-top: 10px;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .navbar .logoBac a{
@@ -223,3 +225,150 @@
     top: 45px;
 }
 
+.navbar .searchBar{
+    position: relative;
+    margin-left: 250px;
+}
+
+.navbar .searchBar i{
+    position: absolute;
+    left:600px;
+top: 13px;
+right: 26px;
+font-size: 25px;
+color: rgb(49, 49, 49);
+}
+
+.navbar .searchBar .searchInput{
+    position: relative;
+  margin-top: 36px;
+  padding: 13px 15px;
+  width: 625px;
+  height: 63px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f3f4f7;
+  font-weight: 100;
+  left:20px
+}
+
+.userCol{
+    position: relative;
+}
+
+.userCol a{
+    color:gray;
+}
+
+.userAcc{
+    position: absolute;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    left: 80px;
+    top:-8px;
+  }
+  
+  .productCount{
+    position: relative;
+    display: flex;
+    left: -45px;
+  }
+
+  .productCount a{
+      text-decoration: none;
+      color:black;
+  }
+  
+  .productCount .currency{
+    position: relative;
+    top: 28px;
+    left: 15px;
+    font-family:"Dosis",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .productCount .basketShow{
+    position: absolute;
+    width: 250px;
+    max-width: 350px;
+    max-height: 600px;
+    min-height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px 0px rgba(57, 57, 57, 0.2);
+    border-radius: 15px;
+    top: 65px;
+    left: -160px;
+    transition: 1s;
+    display: none;
+  
+  }
+
+
+  .productCount .basketShow img{
+    width:125px;
+    height:100px;
+  }
+
+  .productCount .basketShow .basketCont{
+    font-size:14px;
+    font-weight:600;
+  }
+
+  .productCount .basketShow .sale{
+    font-size:12px; 
+    padding-top:45px;
+  }
+  
+  .productCount:hover .basketShow{  display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;}
+  
+  .basketLogo:hover .basketShow{  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .basketLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 3px;
+    margin-left: 10px;  
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgb(250, 226, 226);
+    color:rgb(235, 52, 52);
+    top:15px;
+    left: 30px;
+  }
+  .basketLogo i{
+   position: relative;
+   left:8.5px;
+  }
+  .basketLogo .countShow{
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top:-10px;
+    right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 600;
+  }
