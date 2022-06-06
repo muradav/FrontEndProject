@@ -89,7 +89,7 @@
     margin-left: 0px;
 }
 
-.secondHead .thirdCol .text-content:after{
+.secondHead .thirdCol .text-content:before{
     content: '';
     height: 90%; 
     width: 1px;
@@ -104,6 +104,7 @@
 
 .secondHead .thirdCol span{
     padding-top: 7px;
+    padding-left: 20px;
 }
 
 .secondHead .thirdCol span a{
@@ -118,23 +119,37 @@
     padding: 16px;
     font-size: 12px;
     padding-right: 0px;
+    transition: 0.3s;
 }
 
 .secondHead .thirdCol .dropdown{
     position: relative;
   display: inline-block;
+  padding-right: 10px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    background-color:white;
+    min-width: 100px;
+    min-height: 125px;
+    padding-top: 14px;
+    filter: drop-shadow(0px 4px 4px rgb(219, 216, 216));
+    transition: 0.3s;
+    border-radius: 0px 0px 10px 10px;
     z-index: 1;
   }
 
 .secondHead .thirdCol .dropdown a{
     text-decoration: none;
     color: rgb(90, 88, 88);
-} */
+    padding: 6px 35px;
+    display: block;
+    transition: 0.5s;
+    font-size: 12px;
+    font-weight: 600;
+} 
 
 .dropdown-content a:hover {background-color: #ddd;}
 
@@ -145,3 +160,66 @@
 .secondHead .thirdCol .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+.navbar .logoBac{
+    padding-left:95px;
+    padding-top: 30px;
+}
+
+.navbar .logoBac a{
+    position: relative;
+}
+
+.navbar .logoBac a img{
+    width:170px;
+    height:45px;
+    padding-left:5px;
+}
+
+.navbar .logoBac span{
+    font-size:11px;
+    color:#afb0b6;
+    font-family:sans-serif;
+    text-decoration: none;
+    position: absolute;
+    left: 113px;
+    top: 88px;
+}
+
+.navbar .locBtn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left:50px ;
+    width: 180px;
+    height: 60px;
+    border: 1px solid rgb(224, 224, 224);
+    box-shadow: 0px 4px 8px 0px rgba(143, 143, 143, 0.2);
+}
+
+.navbar .locBtn .loc{
+    font-size:10px;
+    color:#afb0b6;
+}
+
+.navbar .locBtn .curLoc{
+    color: #233a95;
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar .locBtn span i{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-size: 10px;
+}
+
+.navbar .colLoc{
+    position: absolute;
+    left: 300px;
+    top: 45px;
+}
+
