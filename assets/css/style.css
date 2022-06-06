@@ -373,32 +373,60 @@ color: rgb(49, 49, 49);
     font-weight: 600;
   }
 
-  .dropCol .dropdownCat{
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropCol .dropdownCat .downBtn{
+  .downBtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     border:none;
     background-color:#2bbef9 ;
     border-radius:25px;
-    width: 230px;
+    min-width: 230px;
     height: 55px;
     color: white;
     position: absolute;
     left: 100px;
     top: 10px;
   }
-
-  .dropCol .dropdownCat .downBtn .listIcon{
-      position: absolute;
-      left: 21px;
+  
+  .downBtn:hover, .downBtn:focus {
+    background-color: #2bbef9;
+  }
+  
+  .dropdownCat {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .catBar {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 300px;
+    overflow: auto;
+    z-index: 1;
+    padding: 12px 16px;
+    left: 100px;
+    top: 85px;
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  .catBar a {
+    color: #3e445a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
   }
 
-  .dropCol .dropdownCat .downBtn .downIcon{
-      position: absolute;
-      left: 195px;
+  .catBar a:hover{
+      color: #2bbef9;
   }
+  
+  .dropdownCat a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
 
   .dropCol .dropdownCat .totalCount{
     background-color:#f0f0f1;
@@ -413,18 +441,67 @@ color: rgb(49, 49, 49);
     top: 57px;
   }
 
-  .dropCol .dropdownCat .catBar{
+  .dropCol .dropdownCat .downBtn .listIcon{
+    position: absolute;
+    left: 21px;
+}
+
+.dropCol .dropdownCat .downBtn .downIcon{
+    position: absolute;
+    left: 195px;
+}
+
+.secondHov{
+    position: relative;
+}
+
+.chevDown1{
+    position: absolute;
+    left: 234px;
+    top:21px;
+}
+
+.chevDown2{
+    position: absolute;
+    left: 250px;
+    top:170px;
+}
+
+.sideMenu {
+    background-color: #ffffff;
+    color: white;
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropSide {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .sideCont {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    background-color: #ffffff;
+    min-width: 230px;
     z-index: 1;
+    position: absolute;
+    left: 30px;
+    top: 37px;
   }
-
-  .dropCol .dropdownCat:hover{
+  
+  .sideCont a {
+    color: #8f8f92;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
   }
+  
+  .sideCont a:hover {background-color: #f0f0f1;}
+  
+  .dropSide:hover .sideCont {display: block;}
+
+ 
 
 

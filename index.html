@@ -130,19 +130,53 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="col dropCol">
-          <div class="dropdown dropdownCat ">
-            
-            <button class="downBtn" ><i class="bi bi-list listIcon"></i><strong>ALL CATEGORIES<i class="bi bi-chevron-down downIcon"></i></strong></button>
+          <div class="dropdown dropdownCat">
+            <button onclick="myFunction()" class="downBtn" ><i class="bi bi-list listIcon"></i><strong>ALL CATEGORIES<i class="bi bi-chevron-down downIcon"></i></strong></button>
             <div class="totalCount"><span> TOTAL 63 PRODUCTS</span></div>
-            <div class="dropdown-content catBar">
-              <a href=""> Fruits & Vegetables</a>
-              <a href=""> Meats & Seafood</a>
-              <a href=""> Breakfast & Dairy</a>
-              <a href=""> Beverages</a>
-              <a href=""> Breads & Bakery</a>
-              <a href=""> Frozen Foods</a>
-              <a href=""> Biscuits & Snacks</a>
-              <a href=""> Grocery & Staples</a>
+            <div id="myDropdown" class="dropdown-content catBar">
+              <div class="dropSide">
+                <button class="sideMenu">
+                  <a href=""><i class="fa-solid fa-apple-whole secondHov"></i> Fruits & Vegetables
+                    <i class="fa-solid fa-chevron-down chevDown1 fa-sm"></i>
+                  </a>
+                </button>
+                <div class="dropdown-content sideCont">
+                  <a href="#">Cuts & Sprouts</a>
+                  <a href="#">Exotic Fruits & Veggies</a>
+                  <a href="#">Fresh Fruits</a>
+                  <a href="#">Fresh Vegetables</a>
+                  <a href="#">Herbs & Seasonings</a>
+                  <a href="#">Packaged Produce</a>
+                  <a href="#">Party Trays</a>
+                </div>
+              </div>
+              <a href=""><i class="fa-solid fa-shrimp"></i> Meats & Seafood</a>
+              <a href=""><i class="fa-solid fa-egg"></i> Breakfast & Dairy</a>
+              <div class="dropSide">
+                <button class="sideMenu">
+                  <a href=""><i class="fa-solid fa-apple-whole secondHov"></i> Beverages
+                    <i class="fa-solid fa-chevron-down chevDown1 fa-sm"></i>
+                  </a>
+                </button>
+                <div class="dropdown-content sideCont">
+                  <a href="#">Coffee</a>
+                  <a href="#">Craft Beer</a>
+                  <a href="#">Drink Boxes & Pouches</a>
+                  <a href="#">Milk & Plant-Based Milk</a>
+                  <a href="#">Soda & Pop</a>
+                  <a href="#">Sparkling Water</a>
+                  <a href="#">Tea & Kombucha</a>
+                  <a href="#">Water</a>
+                  <a href="#">Wine</a>
+                </div>
+              </div>
+              <a href=""><i class="fa-solid fa-cookie-bite"></i> Breads & Bakery</a>
+              <a href=""><i class="fa-solid fa-snowflake"></i> Frozen Foods</a>
+              <a href=""><i class="fa-solid fa-candy-cane"></i> Biscuits & Snacks</a>
+              <a href=""><i class="fa-solid fa-leaf"></i> Grocery & Staples</a>
+              <a href="" class="border-top"> Value of the Day</a>
+              <a href=""> Top 100 Offers</a>
+              <a href=""> New Arrivals</a>
             </div>
           </div>
         </div>
@@ -150,4 +184,5 @@
     </nav>
 
   </body>
+  <script src="./assets/js/script.js"></script>
 </html>
