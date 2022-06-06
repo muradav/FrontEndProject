@@ -232,7 +232,7 @@
 
 .navbar .searchBar i{
     position: absolute;
-    left:600px;
+    left:630px;
 top: 13px;
 right: 26px;
 font-size: 25px;
@@ -249,7 +249,7 @@ color: rgb(49, 49, 49);
   border: none;
   background-color: #f3f4f7;
   font-weight: 100;
-  left:20px
+  left:50px;
 }
 
 .userCol{
@@ -372,3 +372,59 @@ color: rgb(49, 49, 49);
     font-size: 10px;
     font-weight: 600;
   }
+
+  .dropCol .dropdownCat{
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropCol .dropdownCat .downBtn{
+    border:none;
+    background-color:#2bbef9 ;
+    border-radius:25px;
+    width: 230px;
+    height: 55px;
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+  }
+
+  .dropCol .dropdownCat .downBtn .listIcon{
+      position: absolute;
+      left: 21px;
+  }
+
+  .dropCol .dropdownCat .downBtn .downIcon{
+      position: absolute;
+      left: 195px;
+  }
+
+  .dropCol .dropdownCat .totalCount{
+    background-color:#f0f0f1;
+    border-radius:25px;
+    width: 105px;
+    height: 20px;
+    color: #8f8f92;
+    font-size: 11px;
+    border: 1px solid #ffffff;
+    position: absolute;
+    left:145px;
+    top: 57px;
+  }
+
+  .dropCol .dropdownCat .catBar{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropCol .dropdownCat:hover{
+    display: block;
+  }
+
+
