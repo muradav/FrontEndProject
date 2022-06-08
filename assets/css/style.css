@@ -52,19 +52,19 @@
     padding-top: 7px;
     color: rgb(90, 88, 88);
     position: relative;
-    
+
 }
 
 .secondHead .secondCol:after {
     content: '';
-    height: 40%; 
+    height: 40%;
     width: 1px;
-  
+
     position: absolute;
     right: 0;
-    top: 13px; 
-  
-    background-color: rgb(212, 209, 209); 
+    top: 13px;
+
+    background-color: rgb(212, 209, 209);
     opacity: 0.5;
   }
 
@@ -95,15 +95,15 @@
 
 .secondHead .thirdCol .text-content:before{
     content: '';
-    height: 90%; 
+    height: 90%;
     width: 1px;
-  
+
     position: absolute;
     right: 0;
-    top: 0px; 
-  
-    background-color: rgb(212, 209, 209); 
-       
+    top: 0px;
+
+    background-color: rgb(212, 209, 209);
+
 }
 
 .secondHead .thirdCol span{
@@ -113,7 +113,7 @@
 
 .secondHead .thirdCol span a{
     text-decoration: none;
-    
+
 }
 
 .sideHov{
@@ -160,7 +160,7 @@
     transition: 0.5s;
     font-size: 12px;
     font-weight: 600;
-} 
+}
 
 .dropdown-content a:hover {
     background-color: #f0f0f1;
@@ -179,12 +179,12 @@
     border: none;
     padding-left: 0px;
   }
-  
+
   .basketShow {
     position: relative;
     display: inline-block;
   }
-  
+
   .basket-content {
     display: none;
     position: absolute;
@@ -193,16 +193,16 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   .basket-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
+
   .basket-content a:hover {background-color: #f0f0f1;}
-  
+
   .basketShow:hover .basket-content {display: block;}
 
 .currencyHref{
@@ -302,7 +302,7 @@ color: rgb(49, 49, 49);
   border: none;
   background-color: #f3f4f7;
   font-weight: 100;
-  
+
 }
 
 .userCol{
@@ -327,7 +327,7 @@ color: rgb(49, 49, 49);
     /* left: 80px;
     top:-8px; */
   }
-  
+
   .productCount{
     position: relative;
     display: flex;
@@ -337,7 +337,7 @@ color: rgb(49, 49, 49);
       text-decoration: none;
       color:black;
   }
-  
+
   .productCount .currency{
     position: relative;
     /* top: 28px;
@@ -346,7 +346,7 @@ color: rgb(49, 49, 49);
     font-weight: 500;
     font-size: 16px;
   }
-  
+
   .productCount .basketShow{
     position: relative;
     width: 250px;
@@ -360,7 +360,7 @@ color: rgb(49, 49, 49);
     left: -160px; */
     transition: 1s;
     display: none;
-  
+
   }
 
 
@@ -375,28 +375,28 @@ color: rgb(49, 49, 49);
   }
 
   .productCount .basketShow .sale{
-    font-size:12px; 
+    font-size:12px;
     padding-top:45px;
   }
-  
+
   .productCount:hover .basketShow{  display: flex;
     justify-content: center;
     align-items: center;
   flex-direction: column;}
-  
+
   .basketLogo:hover .basketShow{  display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  
+
   .basketLogo{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin-top: 3px;
-    margin-left: 10px;  
+    margin-left: 10px;
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -438,20 +438,20 @@ color: rgb(49, 49, 49);
     height: 55px;
     color: white;
     position: relative;
-    
+
   }
-  
+
   .downBtn:hover, .downBtn:focus {
     background-color: #2bbef9;
   }
 
   /* navbar -- 2 */
-  
+
   .dropdownCat {
     position: relative;
     display: inline-block;
   }
-  
+
   .catBar {
     display: none;
     position: relative;
@@ -465,7 +465,7 @@ color: rgb(49, 49, 49);
     top: 85px; */
     border-radius: 0px 0px 5px 5px;
   }
-  
+
   .catBar a {
     color: #3e445a;
     padding: 12px 16px;
@@ -477,9 +477,9 @@ color: rgb(49, 49, 49);
   .catBar a:hover{
       color: #2bbef9;
   }
-  
+
   .dropdownCat a:hover {background-color: #ddd;}
-  
+
   .show {display: block;}
 
   .dropCol .dropdownCat .totalCount{
@@ -528,12 +528,12 @@ color: rgb(49, 49, 49);
     font-size: 16px;
     border: none;
   }
-  
+
   .dropSide {
     position: relative;
     display: inline-block;
   }
-  
+
   .sideCont {
     display: none;
     position: absolute;
@@ -544,16 +544,16 @@ color: rgb(49, 49, 49);
     left: 30px;
     top: 37px;
   }
-  
+
   .sideCont a {
     color: #8f8f92;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
+
   .sideCont a:hover {background-color: #f0f0f1;}
-  
+
   .dropSide:hover .sideCont {display: block;}
 
   .homebtn {
@@ -564,12 +564,12 @@ color: rgb(49, 49, 49);
     border: none;
     color: #3e445a;
   }
-  
+
   .homedown {
     position: relative;
     display: inline-block;
   }
-  
+
   .homeCont {
     display: none;
     position: absolute;
@@ -578,19 +578,19 @@ color: rgb(49, 49, 49);
     z-index: 1;
     padding-left: 25px;
   }
-  
+
   .homeCont a {
     color: #3e445a;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
+
   .homeCont a:hover {
       background-color: #f0f0f1;
       color: #2bbef9;
 }
-  
+
   .homedown:hover .homeCont {display: block;}
 
 
@@ -602,12 +602,12 @@ color: rgb(49, 49, 49);
     border: none;
     color: #3e445a;
   }
-  
+
   .shopdown {
     position: relative;
     display: inline-block;
   }
-  
+
   .shopCont {
     display: none;
     position: absolute;
@@ -626,19 +626,19 @@ color: rgb(49, 49, 49);
   .shopCont h6:hover{
     color: #2bbef9;
   }
-  
+
   .shopCont a {
     color: #3e445a;
     padding: 12px 4px;
     text-decoration: none;
     display: block;
   }
-  
+
   .shopCont a:hover {
       background-color: #f0f0f1;
       color: #2bbef9;
     }
-  
+
   .shopdown:hover .shopCont {display: block;}
 
   /* body -- 1 */
@@ -650,7 +650,7 @@ color: rgb(49, 49, 49);
 
   .carousel-inner{
     text-align: center;
-    font-size: 18px;    
+    font-size: 18px;
     display: flex;
   }
 
@@ -668,7 +668,7 @@ position: relative;
       top: 7px;
       left:105px;
   }
-  
+
   .excOffer{
     width: 100px;
     height: 30px;
@@ -735,7 +735,7 @@ position: relative;
     border-radius: 50%;
     background-color: rgb(250, 226, 226);
   }
-  
+
 /* body -- 2 */
 
 .proCategories .container{
@@ -753,13 +753,13 @@ position: relative;
     background-color: white;
     border-radius: 5px 0px 0px 5px;
   }
-  
+
   .mainProduct img{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
+
   .miniProducts .row .col{
     width: 249px;
     height: 145px;
@@ -796,6 +796,259 @@ position: relative;
     font-family: "dosis"sans-serif;
   }
 
- 
+  /* body -- 3 */
+  .weeklyDeal .container{
+    width:1200px;
+    height:800px;
+  }
+
+  .weeklyDeal .dealedProduct{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 744px;
+    padding: 0px 15px;
+    border: 2px solid #ed174a;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .weeklyDeal .dealedProduct .sale{
+    width: 80px;
+    height: 80px;
+    background-color: #ed174a;
+    border-radius: 50%;
+    position: relative;
+    top: 80px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+  }
+
+  #headline{
+    padding:30px 0px 0px 15px ;
+    color:#002CA0;
+    font-family: inter,sans-serif;
+    font-size: 21px;
+  }
+
+  #offerText{
+    padding-left:15px;
+    font-size: 13px;
+    color: #afb0b6;
+  }
+
+  .sale img{
+    width:350px;
+    height: 314px;
+  }
+
+  .prices{
+    padding-left:20px;
+    flex-direction:row;
+  }
+
+  .priceBefore{
+    font-size:20px;
+    font-weight:600;
+    color:#D5D5D5;
+    text-decoration: line-through;
+    padding-top:5px;
+    font-family:dosis,sans-serif;
+  }
+
+  .priceAfter{
+    font-size:25px;
+    font-weight:580;
+    color:#d51243;
+    margin-left:15px;
+    font-family:dosis,sans-serif;
+  }
+
+  .categoryCount{
+    font-size:22px;
+    font-weight:400;
+    padding-left:20px;
+  }
+
+  .stars{
+    padding-left:20px;
+    font-size:12px;
+  }
+
+  .weeklyDeal .miniProducts{
+    width: 780px;
+    height: 797px;
+    padding: 0px 15px;
+  }
+  .weeklyDeal .miniProducts .row .col .productInfos .category a{
+    color:#2c2c2c;
+
+  }
+  .weeklyDeal .miniProducts .row .col .productInfos .category a:hover{
+    transition: 0.5s;
+    color: rgb(50, 2, 206);
+  }
+
+  .weeklyDeal .miniProducts .row{
+    padding:0px 20px;
+    border-radius: 10px;
+
+  }
+  .weeklyDeal .miniProducts .row .col{
+    width: 249px;
+    height: 372px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .weeklyDeal .miniProducts .row .col a img{
+    width: 180px;
+    height: 187px;
+  }
+
+
+  #countdown li{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #ed174a;
+    color: white;
+    font-family:"dosis",sans-serif;
+    font-size: 20px;
+    margin: 0px 5px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #countdown .points{
+    padding-top: 10px;
+    font-weight: 600;
+  }
+
+  .excSale{
+    width: 43px;
+    height: 25px;
+    background-color: #00c8ff;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "dosis",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .recommend{
+    width: 90px;
+    height: 25px;
+    background-color: #a0a0a0;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "dosis",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+  .weeklyDeal .miniProducts .row .col .addCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    border-radius: 25px;
+    background-color: #233a95;
+    color: white;
+    bottom: -30px;
+    left: 20px;
+    height: 30px;
+    opacity: 0;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "dosis",sans-serif;
+  }
+   .addC{
+    position: absolute;
+    display: flex;
+    bottom: -40px;
+    left: -1px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: #d0d0d0;
+    border-width: 0px 1px 1px;
+    border-radius: 0px 0px 10px 10px;
+    width: 246.8px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    padding: 5px;
+  }
+  .weeklyDeal .miniProducts .row .col .popUp{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 0px 4px 0px rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: 0.2s;
+    font-size: 14px;
+    opacity: 0;
+  }
+
+  .weeklyDeal .miniProducts .row .col:hover {
+    border-color: #d1d1d1;
+    box-shadow: 0px 1px 8px 8px rgba(218, 218, 218, 0.2);
+    border-radius: 10px 10px 0px 0px;
+    z-index: 1;
+
+  }
+  .weeklyDeal .miniProducts .row .col:hover .addCart{
+    color: #FFFFFF;
+    text-align: center;
+     opacity: 1;
+  }
+  .weeklyDeal .miniProducts .row .col:hover .addC {
+    color: #FFFFFF;
+    text-align: center;
+     opacity: 1;
+  }
+  .weeklyDeal .miniProducts .row .col .addCart:hover{
+    box-shadow: 0px 0px 8px 3px rgba(52, 155, 200, 0.404);
+
+  }
+  .weeklyDeal .miniProducts .row .col:hover .fullScreen{
+    text-align: center;
+     opacity: 1;
+  }
+  .weeklyDeal .miniProducts .row .col:hover .heart{
+    text-align: center;
+     opacity: 1;
+  }
+  .weeklyDeal .miniProducts .row .col .popUp:hover{
+    background-color: #233a95;
+    color: white;
+  }
+
+
 
 
