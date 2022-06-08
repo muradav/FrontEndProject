@@ -841,7 +841,7 @@ position: relative;
     color: #afb0b6;
   }
 
-  .sale img{
+  #discountImg{
     width:350px;
     height: 314px;
   }
@@ -1049,6 +1049,48 @@ position: relative;
     color: white;
   }
 
+/* body -- 4 */
 
+.weekendDis .container{
+    width:1200px;
+}
+
+.weekendDis .banner-1{
+    width: 570px;
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  
+  .weekendDis .banner-1 .contentBanner{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 40px;
+  
+  }
+
+  .spanDis{
+    font-size:15px;
+    font-family:dosis,sans-serif;
+    font-weight:500;
+    color:#FF4123;
+    margin-bottom: 5px;
+  }
+
+  .spanName{
+    font-size: 25px;
+    font-weight:600;
+    color:#3c4765
+  }
+
+  .bacDis{
+    font-size: 13px;
+    color:#3c4765;
+    margin-bottom:20px;
+  }
 
 
