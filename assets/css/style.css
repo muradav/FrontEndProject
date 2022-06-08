@@ -127,6 +127,8 @@
     transition: 0.3s;
 }
 
+
+
 .secondHead .sideHov .dropdown{
     position: relative;
   display: inline-block;
@@ -156,16 +158,57 @@
     font-weight: 600;
 } 
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #f0f0f1;
+    color: #2bbef9;
+}
 
 .secondHead .sideHov .dropdown:hover .dropdown-content {
     display: block;
 }
 
+.basketBtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    padding-left: 0px;
+  }
+  
+  .basketShow {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .basket-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .basket-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .basket-content a:hover {background-color: #f0f0f1;}
+  
+  .basketShow:hover .basket-content {display: block;}
 
+.currencyHref{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
 
 .navbar .logoBac{
-    padding-left:95px;
+    padding-left:10px;
     padding-top: 10px;
     padding-right: 0px;
     margin-right: 0px;
@@ -196,7 +239,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left:50px ;
+    margin-left:10px;
+    margin-top:25px;
     width: 180px;
     height: 60px;
     border: 1px solid rgb(224, 224, 224);
@@ -222,29 +266,29 @@
     font-size: 10px;
 }
 
-.navbar .colLoc{
+/* .navbar .colLoc{
     position: absolute;
     left: 300px;
     top: 45px;
-}
+} */
 
 .navbar .searchBar{
     position: relative;
-    margin-left: 250px;
+    margin-left:35px;
 }
 
 .navbar .searchBar i{
     position: absolute;
     left:630px;
 top: 13px;
-right: 26px;
+left: 580px;
 font-size: 25px;
 color: rgb(49, 49, 49);
 }
 
 .navbar .searchBar .searchInput{
     position: relative;
-  margin-top: 36px;
+  margin-top: 25px;
   padding: 13px 15px;
   width: 625px;
   height: 63px;
@@ -252,7 +296,7 @@ color: rgb(49, 49, 49);
   border: none;
   background-color: #f3f4f7;
   font-weight: 100;
-  left:50px;
+  
 }
 
 .userCol{
@@ -264,24 +308,23 @@ color: rgb(49, 49, 49);
 }
 
 .userAcc{
-    position: absolute;
+    position: relative;
     display: flex;
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-top: 35px;
+    margin-left: 230px;
     width: 42px;
     height: 42px;
     border: 1px solid rgb(213, 213, 213);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    left: 80px;
-    top:-8px;
+    /* left: 80px;
+    top:-8px; */
   }
   
   .productCount{
     position: relative;
     display: flex;
-    left: -45px;
   }
 
   .productCount a{
@@ -291,15 +334,15 @@ color: rgb(49, 49, 49);
   
   .productCount .currency{
     position: relative;
-    top: 28px;
-    left: 15px;
+    /* top: 28px;
+    left: 15px; */
     font-family:"Dosis",sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
   
   .productCount .basketShow{
-    position: absolute;
+    position: relative;
     width: 250px;
     max-width: 350px;
     max-height: 600px;
@@ -307,8 +350,8 @@ color: rgb(49, 49, 49);
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 8px 0px rgba(57, 57, 57, 0.2);
     border-radius: 15px;
-    top: 65px;
-    left: -160px;
+    /* top: 65px;
+    left: -160px; */
     transition: 1s;
     display: none;
   
@@ -403,14 +446,15 @@ color: rgb(49, 49, 49);
   
   .catBar {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
     width: 300px;
     overflow: auto;
     z-index: 1;
     padding: 12px 16px;
-    left: 100px;
-    top: 85px;
+    margin-top: 25px;
+    /* left: 100px;
+    top: 85px; */
     border-radius: 0px 0px 5px 5px;
   }
   
