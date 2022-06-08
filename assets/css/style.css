@@ -634,6 +634,98 @@ color: rgb(49, 49, 49);
   .shopdown:hover .shopCont {display: block;}
 
 
+  .carCont {
+    width: 100%;
+    height: 460px;
+  }
+
+  .carousel-inner{
+    text-align: center;
+    font-size: 18px;    
+    display: flex;
+  }
+
+  .carousel-inner img{
+    display: block;
+    width: 100%;
+  }
+
+  .carousel-item{
+position: relative;
+  }
+
+  .contains{
+      position: absolute;
+      top: 7px;
+      left:105px;
+  }
+  
+  .excOffer{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,rgb(106, 223, 106),rgba(87, 220, 89, 0.247),rgba(78, 212, 80, 0.044));
+    border-radius: 25px;
+    margin-left: 8px;
+    margin-top: -7px;
+    font-size:14px;
+    font-weight:500;
+    color: green;
+    font-family: "Dosis",sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .offer{
+    font-size:12px;
+    display:flex;
+    letter-spacing:0.5px;
+  }
+
+  .kinds{
+    font-size: 49px;
+    font-weight:760;
+    text-align:left;
+    line-height:55px;
+    padding-top:15px;
+    font-family: inter,sans-serif;
+    letter-spacing:-2px;
+  }
+
+  .advise{
+    text-align:left;
+    margin-top:12px;
+    font-size: 17px;
+  }
+
+  .lastList{
+    margin-top:15px;
+    text-align: left;
+  }
+
+  .price{
+    font-family: Dosis,sans-serif;
+    color: rgb(210, 0, 0);
+    font-size:35px;
+    font-weight:500;
+  }
+
+  .shopNowBtn{
+    color:white;
+    width:135px;
+    border-radius:25px;
+    background-color:#2bbef9;
+    border:none;
+    height:40px;
+  }
+
+  .changeIcon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(250, 226, 226);
+  }
   
 
  
