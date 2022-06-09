@@ -1093,4 +1093,107 @@ position: relative;
     margin-bottom:20px;
   }
 
+  /* body -- 5 */
+
+  @media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+.bestCont  .row .col{
+    border:1px solid #ECECEC;
+    max-width: 234px;
+    height: 400px;
+    position: relative;
+  
+  }
+  
+  .bestCont .row .col .popUp{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 0px 4px 0px rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: 0.2s;
+    font-size: 14px;
+    opacity: 0;
+  }
+  
+  .bestCont .row .col:hover .fullScreen{
+    text-align: center;
+     opacity: 1;
+  }
+  .bestCont .row .col:hover .heart{
+    text-align: center;
+     opacity: 1;
+  }
+  .bestCont .row .col .popUp:hover{
+    background-color: #233a95;
+    color: white;
+  }
+  .bestCont .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #ECECEC;
+    box-shadow: 0px 0px 8px 2px rgba(187, 187, 187, 0.204);
+    z-index: 1;
+  }
+  
+  .bestCont .preview{
+    top: 250px;
+    left: -20px;
+  }
+  .bestCont .preview:hover{
+    box-shadow: 0px 0px 8px 4px rgba(187, 187, 187, 0.362);
+  }
+  .bestCont .next{
+    top: 250px;
+    right:-20px;
+  }
+  .bestCont .next:hover{
+    box-shadow: 0px 0px 8px 4px rgba(187, 187, 187, 0.362);
+  }
+
 
