@@ -1371,4 +1371,154 @@ position: relative;
     font-style: normal;
   }
 
+  /* footer */
+
+  /* site footer */
+
+  .iconCol {
+    position: relative;
+  }
+  
+  .iconCol:after {
+    content: '';
+    height: 50%; 
+    width: 1px;
+  
+    position: absolute;
+    right: 0;
+    top: 0; 
+  
+    background-color: rgb(228, 229, 238); 
+  }
+
+  .site-footer{
+    margin-top:125px;
+  }
+
+  .site-footer .subscribe{
+    width:100%;
+    height:353px;
+    background:#233a95;
+  }
+
+  .site-footer .subscribe .row{
+    width:1200px;
+    height:353px;
+  }
+  .site-footer .subscribe .row .discountCol{
+    width:500px;
+    height:353px;
+    padding:15px;
+  }
+
+  .site-footer .subscribe .row .discountCol .discount-content{
+    width:470px;
+    height:353px;
+    padding:70px 45px;
+  }
+
+  .site-footer .subscribe .row .discountCol .discount-content .discount{
+    color: white;
+    font-weight:300;
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  .site-footer .subscribe .row .discountCol .discount-content .join-title{
+    color:white;
+    font-family:inter,sans-serif;
+    margin-bottom:15px;
+    font-weight:bolder;
+    font-size:26px;
+  }
+
+  .site-footer .subscribe .row .discountCol .discount-content p{
+    margin-bottom: 32px;
+    color:#cdcdcda4;
+    font-family:inter,sans-serif;
+    font-size: 13px;
+    font-weight:bolder;
+  }
+
+  .site-footer .subscribe .row .discountCol .discount-content .inputs{
+    position: relative;
+  }
+
+  .site-footer .subscribe .row .discountCol .discount-content .inputs input{
+    padding-left:50px;
+    width:472px;
+    height:62px;
+    padding-right:15px;
+    border-radius:5px;
+    outline:none;
+    border:none;
+  }
+
+  .site-footer .subscribe .row .discountCol .discount-content .inputs .mail{
+    left: 15px;
+    top:15px;
+    position: absolute;
+    font-size: 20px;
+    color: #afb0b6;
+  }
+
+  .site-footer .subscribe .row .discountCol .discount-content .inputs a{
+    width:103px;height:54px; 
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+    background-color:#233a95;
+    color:white; 
+    right:-85px;top:4px;
+    position: absolute;
+    border-radius: 7px;
+  }
+
+
+  .site-footer .subscribe .row .imageCol{
+    width:700px;
+    height:277px;
+    padding:0px 15px;
+  }
+  .site-footer .subscribe .row .imageCol .image{
+    display:flex; 
+    justify-content:flex-end;
+    margin-left:75px;
+    padding-top: 76px;
+  }
+
+  /* icon footer */
+
+  .icon-footer{
+    padding:35px; 
+    background-color: #f7f8fd;
+  }
+
+  .icon-footer .container .row .col{
+    max-width:300px;
+    height:33px;
+    padding:0px 15px;
+  }
+
+  .icon-footer .container .row .col .iconbox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:270px;
+    height:33px;
+  }
+
+  .icon-footer .container .row .col .icon{
+    font-size: 24px;
+    margin-right: 5px;
+  }
+
+  .icon-footer .container .row .col .text{
+    font-family:inter,sans-serif;
+    font-size: 13px;
+  }
+
+  
+
+
 
