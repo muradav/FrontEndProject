@@ -1,0 +1,89 @@
+.myAccount .container{
+    width:1200px;
+    height: 436px;
+}
+
+.myAccount .container #homeAccount{
+    width: 1170px;
+    height:40px;
+    padding:10px;
+    font-size:13px;
+}
+
+.myAccount .container .accountBody{
+    width:1170px;
+    height:356px;
+    margin-top:50px
+}
+
+.myAccount .container .accountBody .row .col .login{
+    font-family: dosis,sans-serif;
+    font-size:16px;
+    color:#262626;
+    font-weight:600;
+}
+
+.myAccount .container .accountBody .row .col form .userEmail{
+    font-size: 13px;
+    font-family:inter,sans-serif;
+    margin-bottom:15px;
+    color:#464646;
+}
+
+.myAccount .container .accountBody .row .col form .inputStyle{
+    width:570px;
+    height:40px;
+    background-color:#f3f4f7;
+    outline:none;
+    padding:0px 15px;
+    border-radius:5px;
+    border:none;
+}
+
+.myAccount .container .accountBody .row .col form #password{
+    font-size: 13px;
+    font-family:inter,sans-serif;
+    margin:15px 0px;
+    color:#464646
+}
+
+.myAccount .container .accountBody .row .col form #checkBox{
+    margin-top:15px;
+    font-size: 13px;
+}
+
+.myAccount .container .accountBody .row .col form #checkBox span{
+    margin-left:10px;
+    font-size: 13px;
+    font-family:inter,sans-serif;
+    margin-bottom:10px;
+    color:#464646;
+}
+
+.myAccount .container .accountBody .row .col form .logİnRegister div{
+    width:83px ;
+    height:40px;
+    color:white;
+    background-color:#233a95;
+    display: flex;justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: inter,sans-serif;
+    font-size: 14px;
+    margin:15px 0px;
+    border: none;
+}
+
+.myAccount .container .accountBody .row .col form #askLost{
+    font-size: 14px;
+    font-family:inter,sans-serif;
+    color:#2bbef9;
+}
+
+.myAccount .container .accountBody .row .col form p{
+    font-size: 13px;
+    font-family:inter,sans-serif;
+    margin:10px 0px;
+    color:#464646;
+    line-height:25px;
+}
