@@ -1648,7 +1648,43 @@ position: relative;
     border-radius: 50%;
   }
 
-  
+  /* copyright footer */
+
+  .copyright-footer .container{
+    width:1200px;
+    height:89px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .copyright-footer .container .copyright-content{
+    font-size:12px;
+    font-family:inter,sans-serif;
+    color:#767676;
+  }
+
+  .copyright-footer .container .policies-content{
+    margin-left:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright-footer .container .policies-content ul{
+    list-style:none;
+    padding-top:15px;
+    display:flex;
+  }
+  .copyright-footer .container .policies-content ul li{
+    margin-right:15px;
+    font-size:12px;
+    font-family:inter,sans-serif;
+    color:#767676
+  }
+
+  .copyright-footer .container .paymentTypes{
+    margin-left:10px;
+  }
 
   
 
