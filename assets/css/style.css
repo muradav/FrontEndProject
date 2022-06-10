@@ -1623,13 +1623,18 @@ position: relative;
     text-align: right;
   }
 
-  .contacts-footer .container .row .socialCol .downloadInfo-contentInfo .purchase-content{
+  .contacts-footer .container .row .socialCol .downloadInfo-content .purchase-content{
     font-size:12px;
     color: #767676;
   }
 
   .contacts-footer .container .row .socialCol .playMarket{
     margin-right:5px;
+    cursor: pointer;
+  }
+
+  .contacts-footer .container .row .socialCol .appStore{
+    cursor: pointer;
   }
 
   .contacts-footer .container .row .socialCol a{
