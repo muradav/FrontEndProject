@@ -1309,6 +1309,66 @@ position: relative;
     border-radius:25px;
   }
 
+  /* last body */
+  .lastFoodCat .row .col{
+    width: 400px;
+    height: 392px;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .lastFoodCat .row .col img{
+    width: 370px;
+    height: 260px;
+    border-radius: 5px;
+  }
   
+  .lastFoodCat .row .col .post{
+    width: 370px;
+    height: 106.5px;
+  }
+  
+  .lastFoodCat .row .col .post .head{
+    margin:10px 0px;
+    width: 370px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "dosis",sans-serif;
+    color: #9B9BB4;
+  }
+  
+  .lastFoodCat .row .col .post .title a{
+    width: 370px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight:bolder;
+    font-family: "inter",sans-serif;
+    color:#000000;
+  }
+  .lastFoodCat .row .col .post .ending{
+    width: 370px;
+    height: 21px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .lastFoodCat .row .col .post .ending .time a{
+    margin-right: 8px;
+    color: #535353;
+    font-weight: 400;
+  }
+  .lastFoodCat .row .col .post .ending .comments a{
+    margin-right: 8px;
+    color: black;
+    font-weight: 500;
+  }
+  .lastFoodCat .row .col .post .ending .author a{
+    color: #000000;
+    font-weight: 500;
+    margin-left: 3px;
+    font-style: normal;
+  }
 
 
