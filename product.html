@@ -106,11 +106,96 @@
         <span class="subLogo">Online Grocery Shopping Center</span>
       </div>
       <div class="col-2 colLoc ml-0">
-        <button type="button" class="btn locBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button id="myBtn" type="button" class="btn locBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <span class="loc">Your Location</span>
           <div class="curLoc">Select a Location</div>
           <span><i class="fa-solid fa-chevron-down"></i></span>
         </button>
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header d-flex flex-column">
+              <h5 class="modal-title mt-4" id="exampleModalLabel">
+                Choose your Delivery Location
+              </h5>
+              <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control bg-light" id="recipient-name"
+                    style="font-family: Arial, FontAwesome" placeholder="&#xf002;  Search your area" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">Alabama</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $130
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">Alaska</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $120
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">Arizona</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $120
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">California</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $110
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">Colorado</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $140
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">Florida</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $160
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">Georgia</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $120
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">Kansas</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $170
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">Minnesota</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $120
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">New York</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $110
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                <div class="fs-6 my-auto">Washington</div>
+                <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                  Min: $130
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-4 searchCol px-0">
         <div class="searchBar">
