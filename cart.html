@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/cart.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+    <title>Cart-Bacola-Grocery Market and Food Theme</title>
+  </head>
+  <body>
+    <!-- header -- 1 -->
+    <div class="container-fluid covidHead">
+      <h6>
+        Due to the <strong>COVID 19</strong> epidemic, orders may be processed
+        with a slight delay
+      </h6>
+    </div>
+    <!-- header -- 2 -->
+    <div class="secondHead">
+      <div class="container-fluid border-bottom secondContainer">
+        <div class="row">
+          <div class="col-4 d-flex justify-content-start">
+            <ul>
+              <li><a href="#">About Us</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">My account</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Wishlist</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Order Tracking</a></li>
+            </ul>
+          </div>
+          <div class="col-4 d-flex justify-content-center secondCol">
+            <i class="bi bi-shield"></i>
+            <span>100% Secure delivery without contacting the courier</span>
+          </div>
+          <div class="col-2 d-flex justify-content-center thirdCol">
+            <div class="text-content">
+              <span
+                >Need help? Call Us:
+                <a href="" style="color:#2bbef9;"><strong>+ 0020 500</strong></a>
+              </span>
+            </div>
+            
+          </div>
+
+          <div class="col-2">
+            <div class="sideHov d-flex">
+              <div class="dropdown dropdownLang">
+                <button class="downButton" ><strong>English<i class="bi bi-chevron-down"></i></strong></button>
+                <div class="dropdown-content langBar">
+                  <a href="">English</a>
+                  <a href="">Spanish</a>
+                  <a href="">German</a>
+                </div>
+              </div>
+              <div class="dropdown dropdownCur">
+                <button class="downButton"><strong>USD<i class="bi bi-chevron-down"></i></strong></i></button>
+                <div class="dropdown-content curBar">
+                  <a href="">USD</a>
+                  <a href="">INR</a>
+                  <a href="">GBP</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -- 1 -->
+    <nav class="navbar">
+      <div class="container mt-3">
+        <div class="row justify-content-between">
+          <div class="col-2 logoBac">
+          <a href="index.html"><img src="./assets/img/bacola-logo.png"  alt=""></a>
+          <span class="subLogo">Online Grocery Shopping Center</span>
+        </div>
+        <div class="col-2 colLoc ml-0">
+          <button id="myBtn" type="button" class="btn locBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span class="loc">Your Location</span>
+            <div class="curLoc">Select a Location</div>
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column">
+                <h5 class="modal-title mt-4" id="exampleModalLabel">
+                  Choose your Delivery Location
+                </h5>
+                <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <form>
+                  <div class="mb-3">
+                    <input type="text" class="form-control bg-light" id="recipient-name"
+                      style="font-family: Arial, FontAwesome" placeholder="&#xf002;  Search your area" />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">Alabama</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $130
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">Alaska</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $120
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">Arizona</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $120
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">California</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $110
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">Colorado</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $140
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">Florida</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $160
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">Georgia</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $120
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">Kansas</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $170
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">Minnesota</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $120
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">New York</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $110
+                  </div>
+                </div>
+                <div class="mb-3 d-flex justify-content-between border-bottom border-light align-middle">
+                  <div class="fs-6 my-auto">Washington</div>
+                  <div class="rounded-pill border border-light p-2 fs-6 mb-2 text-black-50">
+                    Min: $130
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 searchCol px-0">
+          <div class="searchBar">
+            <input class="form-control me-2 searchInput" type="search" placeholder="Search for products..." aria-label="Search">
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+        <div class="col-2 userCol">
+          <a href="myAccount.html"><div class="userAcc"><i class="bi bi-person"></i></div></a> 
+        </div>
+        <div class="col-2 d-flex justify-content-center">
+          <!-- <a href="" class="currencyHref"><span class="currency">$<span class="amount">0.00</span></span></a> -->
+          <div class="basketShow">
+            <a href="" class="currencyHref"><span class="currency">$<span class="amount">0.00</span></span></a>
+            <button class="basketBtn"><a href=""class="basketLogo" >
+              <i class="bi bi-basket3"></i>
+              <div class="countShow">0</div>
+            </a></button>
+            <div class="dropdown-content basket-content">
+              <a href="#"><div class="basketShow">
+                <img class="w-100" src="./assets/img/empty-removebg-preview.png" alt="" srcset="">
+                <span class="basketCont" >No product in the cart</span>
+                <span class="sale" ><hr> We reduce shipping prices to only 2.49$</span>
+              </div> </a>
+            </div>
+          </div>
+          <!-- <div class="productCount">
+           <a href=""><span class="currency">$<span class="amount">0.00</span></span></a>
+           <div class="basketShow">
+             <img src="./assets/img/empty-removebg-preview.png" alt="" srcset="">
+             <span class="basketCont" >No product in the cart</span>
+             <span class="sale" ><hr> We reduce shipping prices to only 2.49$</span>
+           </div> 
+            <a href=""class="basketLogo" >
+              <i class="bi bi-basket3"></i>
+              <div class="countShow">0</div>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -- 2 -->
+    <nav class="navbar-expand-lg mt-4">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-4 dropCol">
+            <div class="dropdown dropdownCat">
+              <button onclick="myFunction()" class="downBtn" ><i class="bi bi-list listIcon"></i><strong>ALL CATEGORIES<i class="bi bi-chevron-down downIcon"></i></strong></button>
+              <div class="totalCount"><span> TOTAL 63 PRODUCTS</span></div>
+              <div id="myDropdown" class="dropdown-content catBar">
+                <div class="dropSide">
+                  <button class="sideMenu">
+                    <a href=""><i class="fa-solid fa-apple-whole secondHov"></i> Fruits & Vegetables
+                      <i class="fa-solid fa-chevron-down chevDown1 fa-sm"></i>
+                    </a>
+                  </button>
+                  <div class="dropdown-content sideCont">
+                    <a href="#">Cuts & Sprouts</a>
+                    <a href="#">Exotic Fruits & Veggies</a>
+                    <a href="#">Fresh Fruits</a>
+                    <a href="#">Fresh Vegetables</a>
+                    <a href="#">Herbs & Seasonings</a>
+                    <a href="#">Packaged Produce</a>
+                    <a href="#">Party Trays</a>
+                  </div>
+                </div>
+                <a href=""><i class="fa-solid fa-shrimp"></i> Meats & Seafood</a>
+                <a href=""><i class="fa-solid fa-egg"></i> Breakfast & Dairy</a>
+                <div class="dropSide">
+                  <button class="sideMenu">
+                    <a href=""><i class="fa-solid fa-mug-hot secondHov"></i> Beverages
+                      <i class="fa-solid fa-chevron-down chevDown1 fa-sm"></i>
+                    </a>
+                  </button>
+                  <div class="dropdown-content sideCont">
+                    <a href="#">Coffee</a>
+                    <a href="#">Craft Beer</a>
+                    <a href="#">Drink Boxes & Pouches</a>
+                    <a href="#">Milk & Plant-Based Milk</a>
+                    <a href="#">Soda & Pop</a>
+                    <a href="#">Sparkling Water</a>
+                    <a href="#">Tea & Kombucha</a>
+                    <a href="#">Water</a>
+                    <a href="#">Wine</a>
+                  </div>
+                </div>
+                <a href=""><i class="fa-solid fa-cookie-bite"></i> Breads & Bakery</a>
+                <a href=""><i class="fa-solid fa-snowflake"></i> Frozen Foods</a>
+                <a href=""><i class="fa-solid fa-candy-cane"></i> Biscuits & Snacks</a>
+                <a href=""><i class="fa-solid fa-leaf"></i> Grocery & Staples</a>
+                <a href="" class="border-top"> Value of the Day</a>
+                <a href=""> Top 100 Offers</a>
+                <a href=""> New Arrivals</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="collapse navbar-collapse menuBar" id="navbarNavDropdown">
+              <ul class="navbar-nav ulBar">
+                <li class="nav-item"><div class="homedown">
+                  <button class="homebtn fw-bold">HOME<i class="fa-solid fa-chevron-down"></i></button>
+                  <div class="dropdown-content  homeCont">
+                    <a href="index.html">Home 1</a>
+                    <a href="#">Home 2</a>
+                    <a href="#">Home 3</a>
+                    <a href="#">Home 4</a>
+                    <a href="#">Home 5</a>
+                  </div>
+                </li>
+                <li class="nav-item"><div class="shopdown">
+                  <button class="shopbtn fw-bold">SHOP<i class="fa-solid fa-chevron-down"></i></button>
+                  <div class="dropdown-content  shopCont">
+                    <div class="row">
+                      <div class="col">
+                        <h6>Shop Lists</h6>
+                        <a href="#">Shop Default</a>
+                        <a href="#">Shop Right Sidebar</a>
+                        <a href="#">Shop Wide</a>
+                        <a href="#">List Left Sidebar</a>
+                        <a href="#">Load More Button</a>
+                        <a href="#">Infinite Scrolling</a>
+                      </div>
+                      <div class="col">
+                        <h6>Product Detail</h6>
+                        <a href="#">Product Default</a>
+                        <a href="#">Product Variable</a>
+                        <a href="#">Product Grouped</a>
+                        <a href="#">Product External</a>
+                        <a href="#">Product Downloadable</a>
+                        <a href="#">Product With Video</a>
+                      </div>
+                      <div class="col">
+                        <h6>Product Types</h6>
+                        <a href="#">Single Type 1</a>
+                        <a href="#">Single Type 2</a>
+                        <a href="#">Single Type 3</a>
+                        <a href="#">Single Type 4</a>
+                        <a href="#">Thumbnails Left</a>
+                        <a href="#">Zoom Image</a>
+                      </div>
+                      <div class="col">
+                        <h6>Shop Pages</h6>
+                        <a href="#">Cart</a>
+                        <a href="#">Checkout</a>
+                        <a href="#">My account</a>
+                        <a href="#">Wishlist</a>
+                        <a href="#">Order Tracking</a>
+                        <a href="#">Order on WhatsApp</a>
+                      </div>
+                      <div class="col">
+                        <h6>Shop Layouts</h6>
+                        <a href="#">Two Columns</a>
+                        <a href="#">Three Columns</a>
+                        <a href="#">Three Columns Wide</a>
+                        <a href="#">Four Columns</a>
+                        <a href="#">Four Columns Wide</a>
+                        <a href="#">Five Columns wide</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 py-3 fw-bold" href="#"><i class="fa-solid fa-shrimp"></i> MEATS & SEAFOOD</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 py-3 fw-bold" href="#"><i class="fa-solid fa-cookie-bite"></i> BAKERY</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link px-3 py-3 fw-bold" href="#"><i class="fa-solid fa-mug-hot"></i> BEVERAGES</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link px-3 py-3 fw-bold" href="blog.html"> BLOG</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link px-3 py-3 fw-bold" href="contact.html"> CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-0" style="color:#8d8d8d">
+    </nav>
+    <!-- cart body -->
+    <!-- empty cart -->
+    <div class="container emptyCart" style="width:1200px;padding: 0;"id="empty">
+        <div class="top">HOME<i class="fa-solid fa-chevron-right"></i><span style="color: rgb(142, 142, 142);">CART</span></div>
+            <div class="empty">
+                <div class="image"><img src="./assets/img/empty-removebg-preview.png" alt="" srcset="" style="width: 100%;height:100%;object-fit:cover;">
+                    <p>YOUR CART IS CURRENTLY EMPTY</p>
+                    <a href="./shop.html">Return to shop</a>
+                </div>
+         </div>
+    </div>
+    <!-- full cart -->
+    <div class="container productCart" id="full">
+      <div class="row">
+        <div class="col firstCol">
+          <table class="table" style="width:100%;" id="mainTable">
+            <thead>
+              <tr>
+                <th scope="col">img</th>
+                <th scope="col" style="width: 402px;padding: 8px;">Product</th>
+                <th scope="col" style="width:80px;padding: 8px;">Price</th>
+                <th scope="col" style="width:130px;padding: 8px;">Quantity</th>
+                <th scope="col" style="width:82px;padding: 8px;">Subtotal</th>
+                <th scope="col" style="width:30px;padding: 8px;"></th>
+              </tr>
+            </thead>
+            <tbody style="width: 100%;">
+                <!-- ... -->
+            </tbody>
+          </table>
+          <div class="coupon" style="display: flex;">
+            <input type="text" placeholder="Coupon code">
+            <button style="background-color:#233a95;color:white; margin-left: 20px;">Apply coupon</button>
+            <button style="background-color:#f3f3f6;color:#c2c2d3; margin-left: 310px;">Update</button>
+          </div>
+      </div>
+        <div class="col secondCol" id="mini">
+        <div class="miniCard">
+        <p style="font-size:18px;font-family:dosis,sans-serif;margin-bottom:20px;font-weight:600;">CARD TOTALS</p>
+        <hr style="color:#a1a1a1">
+        <div class="subTotal" style="display:flex; justify-content:space-between;align-items:center;height:40px;text-align: center;">
+        <p style="font-size:13px;font-family:inter,sans-serif;font-weight: 600;margin: 0;">Subtotal</p>
+        <div class="totalPrice"></div>
+        </div>
+        <hr style="color:#a1a1a1">
+        <div class="fillrate" style="display:flex; justify-content:space-between;align-items:center;height:180px;text-align: center;">
+          <p style="font-size:13px;font-family:inter,sans-serif;font-weight: 600;margin: 0;">Shipping</p>
+          <div class="choices">
+            <ul style="margin:20px 0px;padding:0;">
+              <li style="font-size:13px;font-family:inter,sans-serif;height:20px;display: flex;justify-content: space-between;align-items: center;margin-bottom: 12px;">Flat rate: <span style="margin-left: 5px;color:red;">$5.00</span><input type="radio" style="margin-left: 5px;"></li>
+              <li style="font-size:13px;font-family:inter,sans-serif;height:20px;display: flex;justify-content:space-between;align-items: center;margin-bottom: 12px;">Free shipping<input type="radio"></li>
+              <li style="font-size:13px;font-family:inter,sans-serif;height:20px;display: flex;justify-content:space-between;align-items: center;margin-bottom: 12px;">Local pickup<input type="radio"></li>
+              <li style="font-size:13px;font-family:inter,sans-serif;height:20px;display: flex;justify-content:space-between;align-items: center;margin-bottom: 30px;">Shipping to <span style="color:black;font-weight: 600;">Al.</span><input type="radio"></li>
+              <li style="font-size:15px;font-family:inter,sans-serif;color:#2bbef9">Change adress</li>
+            </ul>
+          </div>
+          </div>
+          <hr style="color:#a1a1a1">
+          <div class="totally"style="display:flex; justify-content:space-between;align-items:center;height:60px;text-align: center;">
+            <span style="font-weight:600 ;font-size:13px;font-family:inter,sans-serif">Total</span>
+            <span style="font-size:20px;font-family:inter,sans-serif;font-weight:600;">$<span  id="totalPrice"  style="margin-left:5px;">66.36</span></span>
+          </div>
+          <hr style="margin:0">
+          <button style="width:100%;height:50px;background-color:#ed174a;color:white;border-radius:5px;border: none;text-align: center;font-size:14px;font-family:inter,sans-serif;margin-top: 20px;">Proceed to checkout</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--footer -->
+ <footer class="site-footer">
+    <!-- subscribe footer -->
+   <div class="subscribe"style="">
+     <div class="container">
+       <div class="row">
+         <div class="col-12 discountCol">
+           <div class="discount-content">
+             <div class="discount">20% discount for your first order</div>
+             <h3 class="join-title">Join our newsletter and get...</h3>
+             <p>Join our email subscription now to get updates on promotions and coupons.</p>
+             <div class="inputs">
+               <input type="email"placeholder="Your email address">
+               <div class="mail"><i class="bi bi-envelope"></i></div>
+               <a class="text-decoration-none" href=""><div>Subscribe</div></a>
+             </div>
+           </div>
+         </div>
+         <div class="col-12 imageCol">
+           <div class="image">
+             <img src="./assets/img/coupon.png" alt="" srcset="">
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- icon footer -->
+   <div class="icon-footer">
+     <div class="container">
+       <div class="row">
+         <div class="col border-end">
+           <div class="iconbox">
+           <div class="icon"><i class="bi bi-cup-straw"></i></div>
+           <div class="text">Everyday fresh products</div>
+           </div>
+         </div>
+         <div class="col border-end">
+           <div class="iconbox">
+           <div class="icon"><i class="bi bi-truck"></i></div>
+           <div class="text">Free delivery for order over $70 </div>
+           </div>
+         </div>
+         <div class="col border-end">
+           <div class="iconbox">
+           <div class="icon"><i class="bi bi-percent"></i></div>
+           <div class="text">Daily Mega Discounts</div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="iconbox">
+           <div class="icon"><i class="bi bi-coin"></i></div>
+           <div class="text">Best price on the market</div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- widgets-footer -->
+   <div class="widgets-footer">
+     <div class="container border-top" style="">
+       <div class="row">
+         <div class="col">
+           <div class="title">FRUITS & VEGETABLES</div>
+           <ul>
+             <li><a href="" >Fresh Vegetables</a></li>
+             <li><a href="" >Herbs & Seasonings</a></li>
+             <li><a href="" >Fresh Fruits</a></li>
+             <li><a href="" >Cuts & Sprouts</a></li>
+             <li><a href="" >Exotic Fruits & Veggies</a></li>
+             <li><a href="" >Packaged Produce</a></li>
+             <li><a href="" >Party Trays</a></li>
+           </ul>
+         </div>
+         <div class="col">
+           <div class="title">BREAKFAST & DIARY</div>
+           <ul>
+             <li><a href="" >Milk & Flavoured Milk</a></li>
+             <li><a href="" >Butter and Margarine</a></li>
+             <li><a href="" >Cheese</a></li>
+             <li><a href="" >Eggs Substitutes</a></li>
+             <li><a href="" >Honey</a></li>
+             <li><a href="" >Marmalades</a></li>
+             <li><a href="" >Sour Cream and Dips</a></li>
+             <li><a href="" >Yogurt</a></li>
+           </ul>
+         </div>
+         <div class="col">
+           <div class="title">MEATS & SEAFOOD</div>
+           <ul>
+             <li><a href="" >Breakfast Sausage</a></li>
+             <li><a href="" >Dinner Sausage</a></li>
+             <li><a href="" >Beef</a></li>
+             <li><a href="" >Chicken</a></li>
+             <li><a href="" >Sliced Deli Meat</a></li>
+             <li><a href="" >Shrimp</a></li>
+             <li><a href="" >Wild Caught Fillets</a></li>
+             <li><a href="" >Crab and Shellfish</a></li>
+             <li><a href="" >Farm Raised Fillets</a></li>
+           </ul>
+         </div>
+         <div class="col">
+           <div class="title">BEVERAGES</div>
+           <ul>
+             <li><a href="" >Water</a></li>
+             <li><a href="" >Sparkling Water</a></li>
+             <li><a href="" >Soda & Pop</a></li>
+             <li><a href="" >Cofee</a></li>
+             <li><a href="" >Milk & Plant-Based Milk</a></li>
+             <li><a href="" >Tea & Kombucha</a></li>
+             <li><a href="" >Drink Boxes & Pouches</a></li>
+             <li><a href="" >Craft Beer</a></li>
+             <li><a href="" >Wine</a></li>
+           </ul>
+         </div>
+       <div class="col">
+         <div class="title">BREADS & BAKERY</div>
+         <ul>
+           <li><a href="" >Milk & Flavoured Milk</a></li>
+           <li><a href="" >Butter and Margarine</a></li>
+           <li><a href="" >Cheese</a></li>
+           <li><a href="" >Eggs Substitutes</a></li>
+           <li><a href="" >Honey</a></li>
+           <li><a href="" >Marmalades</a></li>
+           <li><a href="" >Sour Cream and Dips</a></li>
+           <li><a href="" >Yogurt</a></li>
+         </ul>
+     </div>
+   </div>
+ </div>
+   </div>
+   <!-- contacts footer -->
+   <div class="contacts-footer">
+     <div class="container">
+       <div class="row">
+         <div class="col phoneInfoCol d-flex">
+           <div class="phoneInfos">
+           <div class="phoneIcon"><i class="bi bi-telephone"></i></div>
+           <div class="numberInfos">
+             <div class="number-content">8 800 555-55</div>
+             <div class="text-content">Working 8:00 - 22:00</div>
+           </div>
+           </div>
+         </div>
+         <div class="col socialCol d-flex">
+           <div class="downloadInfo-content">
+             <div class="download-content">Download App on Mobile:</div>
+             <div class="purchase-content">15% discount on your first purchase</div>
+           </div>
+             <div class="playMarket"><img src="./assets/img/google-play.png" alt="" srcset=""></div>
+             <div class="appStore"><img src="./assets/img/app-store.png" alt="" srcset=""></div>
+             <a href="" ><div class="socialMediaIcon"><i class="fa-brands fa-facebook-f"></i></div></a>
+             <a href="" ><div class="socialMediaIcon"><i class="fa-brands fa-twitter"></i></div></a>
+             <a href="" ><div class="socialMediaIcon"><i class="fa-brands fa-instagram"></i></div></a>
+           </div>
+       </div>
+     </div>
+   </div>
+   <!-- copyright footer -->
+   <div class="copyright-footer">
+     <div class="container border-top">
+       <div class="copyright-content">Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.</div>
+       <div class="policies-content">
+         <ul>
+         <li><a href="" style="color:#767676">Privacy Policy</a></li>
+         <li><a href="" style="color:#767676">Terms & Conditions</a></li>
+         <li><a href="" style="color:#767676">Cookie</a></li> 
+       </ul>
+       <div class="paymentTypes">
+         <a href=""><img src="./assets/img/payments.jpg" alt="" srcset=""></a>
+       </div>
+     </div>
+     </div>
+   </div>
+ </footer>
+   </body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.min.js" integrity="sha512-/HL24m2nmyI2+ccX+dSHphAHqLw60Oj5sK8jf59VWtFWZi9vx7jzoxbZmcBeeTeCUc7z1mTs3LfyXGuBU32t+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="./assets/js/cart.js"></script>
+   <script src="./assets/js/script.js"></script>
+ </html>

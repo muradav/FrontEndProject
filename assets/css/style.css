@@ -501,7 +501,7 @@ color: rgb(49, 49, 49);
 
   .catBar {
     display: none;
-    position: relative;
+    position: absolute;
     background-color: #ffffff;
     width: 300px;
     overflow: auto;
@@ -686,7 +686,9 @@ color: rgb(49, 49, 49);
       color: #2bbef9;
     }
 
-  .shopdown:hover .shopCont {display: block;}
+  .shopdown:hover .shopCont {
+    display: block;
+  }
 
   /* body -- 1 */
 
