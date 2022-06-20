@@ -911,12 +911,7 @@ position: relative;
   }
 
   /* body -- 3 */
-  .weeklyDeal .container{
-    width:1200px;
-    height:800px;
-  }
-
-  .weeklyDeal .dealedProduct{
+  .dealsWeek .mainProduct{
     display: flex;
     flex-direction: column;
     width: 420px;
@@ -926,7 +921,7 @@ position: relative;
     background-color: white;
     border-radius: 10px;
   }
-  .weeklyDeal .dealedProduct .sale{
+  .dealsWeek .mainProduct .sale{
     width: 80px;
     height: 80px;
     background-color: #ed174a;
@@ -941,78 +936,27 @@ position: relative;
     font-weight: 600;
     color: white;
   }
-
-  #headline{
-    padding:30px 0px 0px 15px ;
-    color:#002CA0;
-    font-family: inter,sans-serif;
-    font-size: 21px;
-  }
-
-  #offerText{
-    padding-left:15px;
-    font-size: 13px;
-    color: #afb0b6;
-  }
-
-  #discountImg{
-    width:350px;
-    height: 314px;
-  }
-
-  .prices{
-    padding-left:20px;
-    flex-direction:row;
-  }
-
-  .priceBefore{
-    font-size:20px;
-    font-weight:600;
-    color:#D5D5D5;
-    text-decoration: line-through;
-    padding-top:5px;
-    font-family:dosis,sans-serif;
-  }
-
-  .priceAfter{
-    font-size:25px;
-    font-weight:580;
-    color:#d51243;
-    margin-left:15px;
-    font-family:dosis,sans-serif;
-  }
-
-  .categoryCount{
-    font-size:22px;
-    font-weight:400;
-    padding-left:20px;
-  }
-
-  .stars{
-    padding-left:20px;
-    font-size:12px;
-  }
-
-  .weeklyDeal .miniProducts{
+  
+  .dealsWeek .miniProducts{
     width: 780px;
     height: 797px;
     padding: 0px 15px;
   }
-  .weeklyDeal .miniProducts .row .col .productInfos .category a{
+  .dealsWeek .miniProducts .row .col .productInfos .category a{
     color:#2c2c2c;
-
+  
   }
-  .weeklyDeal .miniProducts .row .col .productInfos .category a:hover{
+  .dealsWeek .miniProducts .row .col .productInfos .category a:hover{
     transition: 0.5s;
     color: rgb(50, 2, 206);
   }
-
-  .weeklyDeal .miniProducts .row{
+  
+  .dealsWeek .miniProducts .row{
     padding:0px 20px;
     border-radius: 10px;
-
+    
   }
-  .weeklyDeal .miniProducts .row .col{
+  .dealsWeek .miniProducts .row .col{
     width: 249px;
     height: 372px;
     cursor: pointer;
@@ -1022,12 +966,12 @@ position: relative;
     position: relative;
     transition: 0.3s;
   }
-  .weeklyDeal .miniProducts .row .col a img{
+  .dealsWeek .miniProducts .row .col a img{
     width: 180px;
     height: 187px;
   }
-
-
+  
+  
   #countdown li{
     width: 50px;
     height: 50px;
@@ -1045,7 +989,7 @@ position: relative;
     padding-top: 10px;
     font-weight: 600;
   }
-
+  
   .excSale{
     width: 43px;
     height: 25px;
@@ -1078,7 +1022,7 @@ position: relative;
     top: 50px;
     left: 20px;
   }
-  .weeklyDeal .miniProducts .row .col .addCart{
+   .addCart{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1097,6 +1041,7 @@ position: relative;
    .addC{
     position: absolute;
     display: flex;
+    flex-direction: column;
     bottom: -40px;
     left: -1px;
     background-color: rgb(255, 255, 255);
@@ -1111,14 +1056,18 @@ position: relative;
     opacity: 0;
     padding: 5px;
   }
-  .weeklyDeal .miniProducts .row .col .popUp{
+  
+  .existItem .plus:hover{
+    box-shadow: 0px 0px 4px 0px rgb(169, 225, 173);
+  }
+   .popUp{
     position: absolute;
     top: 15px;
     right: 15px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid #e1e1e1;
+    border: 1px solid #c0c0c051;
     box-shadow: 0px 0px 4px 0px rgb(228, 228, 228);
     display: flex;
     justify-content: center;
@@ -1127,38 +1076,59 @@ position: relative;
     transition: 0.2s;
     font-size: 14px;
     opacity: 0;
+    background-color: white;
   }
-
-  .weeklyDeal .miniProducts .row .col:hover {
+  
+  .dealsWeek .miniProducts .row .col:hover {
     border-color: #d1d1d1;
     box-shadow: 0px 1px 8px 8px rgba(218, 218, 218, 0.2);
     border-radius: 10px 10px 0px 0px;
     z-index: 1;
-
+  
   }
-  .weeklyDeal .miniProducts .row .col:hover .addCart{
+  .dealsWeek .miniProducts .row .col:hover .addCart{
     color: #FFFFFF;
     text-align: center;
+  
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
      opacity: 1;
   }
-  .weeklyDeal .miniProducts .row .col:hover .addC {
+  .dealsWeek .miniProducts .row .col:hover .addC {
     color: #FFFFFF;
     text-align: center;
+  
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
      opacity: 1;
   }
-  .weeklyDeal .miniProducts .row .col .addCart:hover{
+   .addCart:hover{
     box-shadow: 0px 0px 8px 3px rgba(52, 155, 200, 0.404);
-
+  
   }
-  .weeklyDeal .miniProducts .row .col:hover .fullScreen{
+  .dealsWeek .miniProducts .row .col:hover .fullScreen{
     text-align: center;
+  
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
      opacity: 1;
   }
-  .weeklyDeal .miniProducts .row .col:hover .heart{
+  .dealsWeek .miniProducts .row .col:hover .heart{
     text-align: center;
+  
+    -webkit-transition: opacity 0.7s ease-in-out;
+    -moz-transition: opacity 0.7s ease-in-out;
+    -ms-transition: opacity 0.7s ease-in-out;
+    -o-transition: opacity 0.7s ease-in-out;
      opacity: 1;
   }
-  .weeklyDeal .miniProducts .row .col .popUp:hover{
+  .popUp:hover{
     background-color: #233a95;
     color: white;
   }

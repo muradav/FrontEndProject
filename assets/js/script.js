@@ -81,20 +81,11 @@ let addCart=document.querySelectorAll(".addCart");
   let fullTable=document.getElementById("fullTable");
   let totalPrice =document.getElementById("totalBasket");
 
-
-
-
-
-
   if(localStorage.getItem("basket")==null){
     localStorage.setItem("basket",JSON.stringify([]));
   }
 
   let arr=JSON.parse(localStorage.getItem("basket"));
-
-
-
-
 
   function ButtonStyle(){
 
@@ -245,8 +236,7 @@ let addCart=document.querySelectorAll(".addCart");
             
 
   });
-
-
+  
   addToCart.forEach(b=>{
     b.addEventListener("click",function(ev){
 
